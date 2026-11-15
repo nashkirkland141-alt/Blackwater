@@ -1,0 +1,7 @@
+
+{
+  "appId": "com.blackwater.game",
+  "appName": "Blackwater",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
