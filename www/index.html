@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#090b0d">
+<title>BLACKWATER</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="intro">
+  <div class="intro-content">
+    <p class="eyebrow">A CITY THAT NEVER FORGETS</p>
+    <h1>BLACKWATER</h1>
+    <p class="subtitle">EVERY SECRET LEAVES A TRACE.</p>
+    <button id="begin">BEGIN INVESTIGATION</button>
+    <p class="small">A DETECTIVE STORY · CASE FILE 001</p>
+  </div>
+  <div class="intro-bottom">BLACKWATER POLICE DEPARTMENT · EST. 1891</div>
+</div>
+
+<div id="game" class="hidden">
+  <header>
+    <div>● BLACKWATER PD <small>DETECTIVE DIVISION</small></div>
+    <button id="caseBtn">CASE FILE</button>
+  </header>
+
+  <main id="scene">
+    <div class="scene-label">DETECTIVE'S OFFICE · 11:48 PM</div>
+
+    <div class="window">
+      <div class="citylight"></div>
+      <div class="rain"></div>
+    </div>
+
+    <div class="shelf">
+      <i></i><i></i><i></i><i></i>
+    </div>
+
+    <div class="desk">
+      <div class="lamp"></div>
+      <div class="paper"></div>
+      <div class="mug"></div>
+    </div>
+
+    <div class="door"></div>
+    <div class="pinboard"></div>
+
+    <div id="player"></div>
+    <div id="hotspots"></div>
+    <div class="vignette"></div>
+  </main>
+
+  <footer>
+    <div id="hint">TAP A LOCATION TO MOVE. TAP OBJECTS TO EXAMINE.</div>
+    <button id="observe">OBSERVE</button>
+  </footer>
+
+  <div id="dialog" class="panel hidden">
+    <div class="panel-top">
+      <span id="dialogType">OBSERVATION</span>
+      <button id="closeDialog">×</button>
+    </div>
+    <h2 id="dialogTitle"></h2>
+    <p id="dialogText"></p>
+    <div id="dialogActions"></div>
+  </div>
+
+  <div id="casePanel" class="panel case-panel hidden">
+    <div class="panel-top">
+      <span>CASE FILE 001</span>
+      <button id="closeCase">×</button>
+    </div>
+    <h2>THE LAST CALL</h2>
+    <p class="case-sub">PRELIMINARY INVESTIGATION</p>
+    <p>A man was found dead in his apartment at 11:20 PM. The scene was disturbed before police arrived.</p>
+    <h3>KNOWN EVIDENCE</h3>
+    <ul id="evidenceList">
+      <li>No evidence collected yet.</li>
+    </ul>
+    <p class="case-sub">OBJECTIVE: SEARCH THE OFFICE, THEN REPORT TO APARTMENT 4B.</p>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
